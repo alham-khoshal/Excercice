@@ -9,7 +9,7 @@
     <title>form</title>
 </head>
 <body>
-    <form id="form" method="POST" action="http://khoshal.000webhostapp.com/">
+    <form id="form" method="POST" action="http://bienvu.net/script.php"  onsubmit="return validation() ">
         <label id="label" for="/">Ces zones sonnt obligatoires</label>
         <p>vos Coordonnées</p>
         <div class="form-row">
@@ -67,18 +67,19 @@
             </div>
         </div>
         <div class="row">
-        <div class="col-md-3 mb-3">      
-            <label for="subject">Votre demande :</label><br>
-            <select name="subject" id="subject">
-                <option value="choisissez">Choisissez</option>
-                <option value="access">SQL</option>
-                <option value="java">Java</option>
-                <option value="delphi">js</option>
-                <option value="windev">html</option>
-                <option value="visualBasic">css</option>
+        <div class="col-md-3 mb-3">
+            <p>Votre demande</p> 
+            <label id="label" for="validationTooltip04">sujet:</label>
+            <select id="custom-select" class="custom-select" type="text" ><span id="error8"></span>
+            <option value="Choose">Choose</option>
+            <option>je sais pas</option>
+            <option>je sais pas</option>
+            <option>je sais pas</option>
             </select>
-        </div>
-    </div>
+            <div class="invalid-tooltip">
+                Please select a valid state.
+            </div>
+        </div></div>
         <div class="form-group">
             <label id="label" for="exampleFormControlTextarea1">Votre question:</label>
             <textarea id="text1" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><span id="error7"></span>
@@ -89,7 +90,7 @@
             <label id="label" for="validationDefault05">J'accepte le traitement informatique de ce formulaire</label>
         </div>
 
-        <input id="submit" class="btn btn-primary" type="submit">ENVOYER</input>
+        <button id="submit" class="btn btn-primary" type="submit">ENVOYER</button>
     </form>
     <div class="btn">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

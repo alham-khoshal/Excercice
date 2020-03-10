@@ -1,9 +1,8 @@
-let n = 0;
-let i = 1;
-let a = document.getElementById('p')
-n = prompt("entrez votre nombre");
-while
-(i <= n) {
-document.write(" <br> <br> <br> <center> " + i +  "<br> </center>");
-i++
+let m = 0;
+n = parseInt(prompt("entrez votre nombre")); 
+for 
+(i = 1 ; i <= n ; i++ ) { m = i + i
+document.write(" <br> <br> <br> <center> " + i + "<br> </center>");
+
 }
+document.write(" <br> <br> <br> <center> "  + m + "<br> </center>");
